@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    {% include 'components/_links.html' %}
+</head>
+<body>
+<div class="page-holder">
+    <!-- navbar-->
+    {% include 'components/_header.html' %}
+    <!--  Modal -->
+    {% include 'components/_modal.html' %}
+    <!-- HERO SECTION-->
+
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    {% include 'components/_footer.html' %}
+</div>
+</body>
+</html>

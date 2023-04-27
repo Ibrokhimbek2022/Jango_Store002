@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Главная страница
+{% endblock title %}
+
+{% block content %}
+{% include 'components/index/_hero.html' %}
+<!-- CATEGORIES SECTION-->
+{% include 'components/index/_categories.html' %}
+<!-- TRENDING PRODUCTS-->
+{% include 'components/index/_trending.html' %}
+<!-- SERVICES NEWSLETTER-->
+{% include 'components/index/_services_newsletter.html' %}
+{% endblock content %}

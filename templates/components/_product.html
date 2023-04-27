@@ -22,6 +22,6 @@
             </ul>
         </div>
     </div>
-    <h6><a class="reset-anchor" href="detail.html">{{ product.title }}</a></h6>
+    <h6><a class="reset-anchor" href="{{ product.get_absolute_url }}">{{ product.title }}</a></h6>
     <p class="small text-muted">${{ product.price }}</p>
 </div>

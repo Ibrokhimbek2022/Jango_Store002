@@ -1,3 +1,5 @@
+{% load static %}
+
 <footer class="bg-dark text-white">
     <div class="container py-4">
         <div class="row py-5">
@@ -45,12 +47,12 @@
     </div>
 </footer>
 <!-- JavaScript files-->
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/glightbox/js/glightbox.min.js"></script>
-<script src="vendor/nouislider/nouislider.min.js"></script>
-<script src="vendor/swiper/swiper-bundle.min.js"></script>
-<script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
-<script src="js/front.js"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/nouislider/nouislider.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/choices.js/public/assets/scripts/choices.min.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
 <script>
         // ------------------------------------------------------- //
         //   Inject SVG Sprite -

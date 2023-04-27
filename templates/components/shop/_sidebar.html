@@ -10,7 +10,7 @@
     </div>
     <ul class="list-unstyled small text-muted ps-lg-4 font-weight-normal">
         {% for subcat in val %}
-        <li class="mb-2"><a class="reset-anchor" href="#!">{{ subcat }}</a></li>
+        <li class="mb-2"><a class="reset-anchor" href="{{ subcat.get_absolute_url }}">{{ subcat }}</a></li>
         {% endfor %}
     </ul>
     {% endfor %}

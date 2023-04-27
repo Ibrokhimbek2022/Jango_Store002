@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.urls import reverse
 
 # Create your models here.
 
@@ -22,6 +23,11 @@ class Subcategory(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("subcategory_articles", kwargs={"slug": self.slug})
+
+
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -55,6 +61,9 @@ class Product(models.Model):
     )
     subcategory = models.ForeignKey(Subcategory, on_delete=models.SET_NULL, verbose_name="Подкатегория", null=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, verbose_name="Категория", null=True)
+
+    def get_absolute_url(self):
+        return reverse("product_detail", kwargs={"slug": self.slug})
 
     def get_class_by_type(self):
         TYPES_CLASSES = {

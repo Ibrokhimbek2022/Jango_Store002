@@ -65,6 +65,13 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse("product_detail", kwargs={"slug": self.slug})
 
+    def get_first_photo(self):
+        photo = self.productimage_set.all().first()
+        if photo is not None:
+            return photo.photo.url
+        return "https://images.satu.kz/126101312_w640_h640_razdel-v-razrabotketovary.jpg"
+
+
     def get_class_by_type(self):
         TYPES_CLASSES = {
             "new": "info",

@@ -4,6 +4,10 @@ from pages.models import Category
 
 register = template.Library()
 
+@register.filter()
+def rating_range(val=0):
+    return range(val)
+
 
 @register.simple_tag()
 def get_categories_data():

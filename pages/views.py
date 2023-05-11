@@ -35,6 +35,8 @@ def subcategory_articles_view(request, slug):
 
 
 def product_detail_view(request, slug):
+    import random
+
     product = Product.objects.get(slug=slug)
     category = product.category
     related_products = Product.objects.filter(category=category).order_by("?")
@@ -52,11 +54,16 @@ def product_detail_view(request, slug):
         form = ReviewForm()
 
     reviews = product.reviews.all()
+    try:
+        rating = sum([x.rating for x in reviews if x.rating]) / reviews.count()
+    except:
+        rating = 0
     context = {
         "product_detail": product,
         "related_products": related_products[:4],
         "form": form,
-        "reviews": reviews
+        "reviews": reviews,
+        "rating": round(rating, 1)
     }
     return render(request, "pages/product_detail.html", context)
 

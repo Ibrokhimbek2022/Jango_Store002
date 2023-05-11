@@ -108,7 +108,7 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    rating = models.IntegerField(choices=RATING_CHOICES, blank=True, null=True)
+    rating = models.IntegerField(choices=RATING_CHOICES, blank=True, null=True, default=0)
 
 
 # CategoryModel

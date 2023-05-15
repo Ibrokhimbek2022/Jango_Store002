@@ -1,0 +1,424 @@
+[
+  {
+    "model": "pages.category",
+    "pk": 1,
+    "fields": {
+      "title": "Красота"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 2,
+    "fields": {
+      "title": "Здоровье"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 3,
+    "fields": {
+      "title": "Электроника"
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 1,
+    "fields": {
+      "title": "Мужские очки",
+      "slug": "muzhskie-ochki",
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 2,
+    "fields": {
+      "title": "Женские очки",
+      "slug": "zhenskie-ochki",
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 3,
+    "fields": {
+      "title": "Бритвы",
+      "slug": "britvy",
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 4,
+    "fields": {
+      "title": "Косметика",
+      "slug": "kosmetika",
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 5,
+    "fields": {
+      "title": "Телефоны",
+      "slug": "telefony",
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 6,
+    "fields": {
+      "title": "Стиральные машины",
+      "slug": "stiralnye-mashiny",
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 1,
+    "fields": {
+      "title": "Классные мужские очки",
+      "slug": "klassnye-muzhskie-ochki",
+      "description": "Очень крутые мужские очки для мужчин",
+      "price": 100,
+      "quantity": 23,
+      "views": 0,
+      "product_type": "new",
+      "subcategory": 1,
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 2,
+    "fields": {
+      "title": "Крутые женские очки",
+      "slug": "krutye-zhenskie-ochki",
+      "description": "Очень крутые очки, для девушек",
+      "price": 120,
+      "quantity": 12,
+      "views": 0,
+      "product_type": "sale",
+      "subcategory": 2,
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 3,
+    "fields": {
+      "title": "Бритва 1",
+      "slug": "britva-1",
+      "description": "Описание бритвы 1",
+      "price": 15,
+      "quantity": 12,
+      "views": 0,
+      "product_type": null,
+      "subcategory": 3,
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 4,
+    "fields": {
+      "title": "Косметика для лица",
+      "slug": "kosmetika-dlya-lica",
+      "description": "Описание товара",
+      "price": 1567,
+      "quantity": 5,
+      "views": 0,
+      "product_type": "new",
+      "subcategory": 4,
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 5,
+    "fields": {
+      "title": "самсунг с 21 ультра",
+      "slug": "samsung-s-21-ultra",
+      "description": "Мощный телефон самсунг",
+      "price": 1236,
+      "quantity": 12,
+      "views": 0,
+      "product_type": "sale",
+      "subcategory": 5,
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 6,
+    "fields": {
+      "title": "стиральная машина бош",
+      "slug": "stiralnaya-mashina-bosh",
+      "description": "Стирает то что надо",
+      "price": 456,
+      "quantity": 32,
+      "views": 0,
+      "product_type": null,
+      "subcategory": 6,
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 1,
+    "fields": {
+      "photo": "products/64511.0x4602x.jpg",
+      "product": 1
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 2,
+    "fields": {
+      "photo": "products/best-sunglasses-for-men-2.jpeg",
+      "product": 1
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 3,
+    "fields": {
+      "photo": "products/images.jpg",
+      "product": 1
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 4,
+    "fields": {
+      "photo": "products/images_bLXLWSH.jpg",
+      "product": 2
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 5,
+    "fields": {
+      "photo": "products/images_1.jpg",
+      "product": 2
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 6,
+    "fields": {
+      "photo": "products/images_2.jpg",
+      "product": 2
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 7,
+    "fields": {
+      "photo": "products/images_1_vddKdfv.jpg",
+      "product": 3
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 8,
+    "fields": {
+      "photo": "products/best-sunglasses-for-men-2_Zkq33iP.jpeg",
+      "product": 3
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 9,
+    "fields": {
+      "photo": "products/foto-1.jpg",
+      "product": 4
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 10,
+    "fields": {
+      "photo": "products/foto-2.jpg",
+      "product": 4
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 11,
+    "fields": {
+      "photo": "products/12.webp",
+      "product": 4
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 12,
+    "fields": {
+      "photo": "products/pro-big-1.jpg",
+      "product": 5
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 13,
+    "fields": {
+      "photo": "products/pro-big-3.jpg",
+      "product": 5
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 14,
+    "fields": {
+      "photo": "products/pro-big-4.jpg",
+      "product": 5
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 15,
+    "fields": {
+      "photo": "products/product6.jpg",
+      "product": 6
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 16,
+    "fields": {
+      "photo": "products/product4.jpg",
+      "product": 6
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 17,
+    "fields": {
+      "photo": "products/pro-big-4_4W56PNr.jpg",
+      "product": 6
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 1,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "abc",
+      "created_at": "2023-05-08T13:17:10.515Z",
+      "rating": 4
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 2,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "121",
+      "created_at": "2023-05-08T13:17:39.917Z",
+      "rating": 4
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 3,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "asdasd",
+      "created_at": "2023-05-08T13:19:28.836Z",
+      "rating": 3
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 4,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "123123",
+      "created_at": "2023-05-08T13:24:00.820Z",
+      "rating": 3
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 5,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "dasdasd",
+      "created_at": "2023-05-08T13:30:44.546Z",
+      "rating": 4
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 6,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "abc123",
+      "created_at": "2023-05-11T12:18:40.866Z",
+      "rating": 3
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 7,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "123123",
+      "created_at": "2023-05-11T12:35:12.581Z",
+      "rating": 1
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 8,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "123123",
+      "created_at": "2023-05-11T13:00:32.552Z",
+      "rating": 3
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 9,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "adasdasdasd",
+      "created_at": "2023-05-11T13:37:24.827Z",
+      "rating": null
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 10,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "United",
+      "created_at": "2023-05-11T13:40:06.386Z",
+      "rating": 1
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 11,
+    "fields": {
+      "author": null,
+      "product": 1,
+      "content": "house",
+      "created_at": "2023-05-11T13:40:19.675Z",
+      "rating": 1
+    }
+  }
+]

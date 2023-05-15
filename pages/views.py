@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponse, redirect
 from .models import Product, Category, Subcategory
 from django.core.paginator import Paginator
 from .forms import ReviewForm
+
+
 # Create your views here.
 
 
@@ -14,6 +16,7 @@ def get_paginator(request, queryset):
     page = request.GET.get("page")
     result = paginator.get_page(page)
     return result
+
 
 def shop_view(request):
     products = Product.objects.all()
@@ -66,5 +69,14 @@ def product_detail_view(request, slug):
         "rating": round(rating, 1)
     }
     return render(request, "pages/product_detail.html", context)
+
+
+
+
+
+
+
+
+
 
 

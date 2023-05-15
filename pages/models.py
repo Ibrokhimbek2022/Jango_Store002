@@ -104,8 +104,8 @@ class Review(models.Model):
         (4, 4),
         (5, 5),
     )
-    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="reviews")
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
+    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="reviews", null=True, blank=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews", null=True, blank=True)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     rating = models.IntegerField(choices=RATING_CHOICES, blank=True, null=True, default=0)
